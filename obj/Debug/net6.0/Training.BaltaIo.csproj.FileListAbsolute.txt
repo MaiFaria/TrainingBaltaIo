@@ -1,0 +1,15 @@
+C:\Users\maiara.santos\Desktop\Úteis\PersonalProjects\Training.BaltaIo\obj\Debug\net6.0\Training.BaltaIo.csproj.AssemblyReference.cache
+C:\Users\maiara.santos\Desktop\Úteis\PersonalProjects\Training.BaltaIo\obj\Debug\net6.0\Training.BaltaIo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\maiara.santos\Desktop\Úteis\PersonalProjects\Training.BaltaIo\obj\Debug\net6.0\Training.BaltaIo.AssemblyInfoInputs.cache
+C:\Users\maiara.santos\Desktop\Úteis\PersonalProjects\Training.BaltaIo\obj\Debug\net6.0\Training.BaltaIo.AssemblyInfo.cs
+C:\Users\maiara.santos\Desktop\Úteis\PersonalProjects\Training.BaltaIo\obj\Debug\net6.0\Training.BaltaIo.csproj.CoreCompileInputs.cache
+C:\Users\maiara.santos\Desktop\Úteis\PersonalProjects\Training.BaltaIo\bin\Debug\net6.0\Training.BaltaIo.exe
+C:\Users\maiara.santos\Desktop\Úteis\PersonalProjects\Training.BaltaIo\bin\Debug\net6.0\Training.BaltaIo.deps.json
+C:\Users\maiara.santos\Desktop\Úteis\PersonalProjects\Training.BaltaIo\bin\Debug\net6.0\Training.BaltaIo.runtimeconfig.json
+C:\Users\maiara.santos\Desktop\Úteis\PersonalProjects\Training.BaltaIo\bin\Debug\net6.0\Training.BaltaIo.dll
+C:\Users\maiara.santos\Desktop\Úteis\PersonalProjects\Training.BaltaIo\bin\Debug\net6.0\Training.BaltaIo.pdb
+C:\Users\maiara.santos\Desktop\Úteis\PersonalProjects\Training.BaltaIo\obj\Debug\net6.0\Training.BaltaIo.dll
+C:\Users\maiara.santos\Desktop\Úteis\PersonalProjects\Training.BaltaIo\obj\Debug\net6.0\refint\Training.BaltaIo.dll
+C:\Users\maiara.santos\Desktop\Úteis\PersonalProjects\Training.BaltaIo\obj\Debug\net6.0\Training.BaltaIo.pdb
+C:\Users\maiara.santos\Desktop\Úteis\PersonalProjects\Training.BaltaIo\obj\Debug\net6.0\Training.BaltaIo.genruntimeconfig.cache
+C:\Users\maiara.santos\Desktop\Úteis\PersonalProjects\Training.BaltaIo\obj\Debug\net6.0\ref\Training.BaltaIo.dll
