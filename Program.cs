@@ -8,8 +8,8 @@ public class Program
 {
     static void Main(string[] args)
     {
-        //Calculator.Menu();
+        Calculator.Menu();
         //Stopwatch.Menu();
-        TextEditor.Menu();
+        //TextEditor.Menu();
     }
 }

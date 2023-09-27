@@ -59,7 +59,7 @@ public abstract class Calculator
 
     private static void Result(float result, string v)
     {
-        Console.WriteLine($"The result of {v} is {result}");
+        Console.WriteLine($"The result of {v} is {result}: ");
         Console.ReadKey();
         Menu();
     }
