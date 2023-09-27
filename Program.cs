@@ -2,15 +2,14 @@
 using Training.BaltaIo.Cronometro;
 using Training.BaltaIo.EditorDeTexto;
 
-namespace Training
+namespace Training.BaltaIo;
+
+public class Program
 {
-    public class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            //Calculadora.Menu();
-            //Stopwatch.Menu();
-            TextEditor.Menu();
-        }
+        //Calculator.Menu();
+        //Stopwatch.Menu();
+        TextEditor.Menu();
     }
 }

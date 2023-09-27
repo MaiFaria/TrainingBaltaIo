@@ -1,84 +1,83 @@
-﻿namespace Training.BaltaIo.EditorDeTexto
+﻿namespace Training.BaltaIo.EditorDeTexto;
+
+public abstract class TextEditor
 {
-    public abstract class TextEditor
+    public static void Menu()
     {
-        public static void Menu()
+        Console.Clear();
+        Console.WriteLine("Select the desired item");
+        Console.WriteLine("1 - Open file");
+        Console.WriteLine("2 - Create new file");
+        Console.WriteLine("0 - Exit");
+        Console.WriteLine("---------------------------------------");
+
+        var option = short.Parse(Console.ReadLine());
+
+        switch (option)
         {
-            Console.Clear();
-            Console.WriteLine("Selecione o item desejado");
-            Console.WriteLine("1 - Abrir arquivo");
-            Console.WriteLine("2 - Criar novo arquivo");
-            Console.WriteLine("0 - Sair");
-            Console.WriteLine("---------------------------------------");
+            case 0:
+                Environment.Exit(0);
+                break;
+            case 1:
+                OpenFile();
+                break;
+            case 2:
+                FileEditor();
+                break;
+            default:
+                break;
+        }
+    }
 
-            var option = short.Parse(Console.ReadLine());
+    private static void OpenFile()
+    {
+        Console.Clear();
+        Console.WriteLine("Enter the file path.");
+        var path = Console.ReadLine();
 
-            switch (option)
-            {
-                case 0:
-                    Environment.Exit(0);
-                    break;
-                case 1:
-                    OpenFile();
-                    break;
-                case 2:
-                    FileEditor();
-                    break;
-                default:
-                    break;
-            }
+        using (var file = new StreamReader(path))
+        {
+            var text = file.ReadToEnd();
+            Console.WriteLine(text);
         }
 
-        private static void OpenFile()
+        Console.WriteLine("");
+        Console.ReadLine();
+        Menu();
+    }
+
+    private static void FileEditor()
+    {
+        Console.Clear();
+        Console.WriteLine("Enter your text below.");
+        Console.WriteLine("After completion, press the ESC key to exit.");
+        Console.WriteLine("---------------------------------------");
+
+        var text = string.Empty;
+
+        do
         {
-            Console.Clear();
-            Console.WriteLine("Informe o caminho do arquivo.");
-            var path = Console.ReadLine();
+            text += Console.ReadLine();
+            text += Environment.NewLine;
+        }
+        while (Console.ReadKey().Key != ConsoleKey.Escape);
 
-            using (var file = new StreamReader(path))
-            {
-                var text = file.ReadToEnd();
-                Console.WriteLine(text);
-            }
+        Save(text);
+    }
 
-            Console.WriteLine("");
-            Console.ReadLine();
-            Menu();
+    private static void Save(string text)
+    {
+        Console.Clear();
+        Console.WriteLine("Enter the path to save the file.");
+        var path = Console.ReadLine();
+
+        using (var file = new StreamWriter(path))
+        {
+            file.Write(text);
         }
 
-        private static void FileEditor()
-        {
-            Console.Clear();
-            Console.WriteLine("Digite seu texto abaixo.");
-            Console.WriteLine("Após conclusão, pressione a tecla ESC para sair.");
-            Console.WriteLine("---------------------------------------");
-
-            var text = string.Empty;
-
-            do
-            {
-                text += Console.ReadLine();
-                text += Environment.NewLine;
-            }
-            while (Console.ReadKey().Key != ConsoleKey.Escape);
-
-            Save(text);
-        }
-
-        private static void Save(string text)
-        {
-            Console.Clear();
-            Console.WriteLine("Informe o caminho para salvar o arquivo.");
-            var path = Console.ReadLine();
-
-            using (var file = new StreamWriter(path))
-            {
-                file.Write(text);
-            }
-
-            Console.WriteLine($"Arquivo {path} salvo com sucesso!");
-            Console.ReadLine();
-            Menu();
-        }
+        Console.WriteLine($"File {path} saved successfully!");
+        Console.ReadLine();
+        Menu();
     }
 }
